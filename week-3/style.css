@@ -1,0 +1,71 @@
+body {
+	background-color: black;
+	font-family: arial, sans-serif;
+}
+.header-box {
+	width: 1420px;
+	height: 75px;
+	background-color: #addff6;
+	
+		
+}
+	
+.header { 
+	color: white;
+	font-size: 250px;
+	text-align: center;
+	margin: 0 0 0 0;
+}
+
+hr { 
+	background-color: white;
+	margin: 0 0 0 0;
+}
+
+
+#nav li {
+	list-style: none;
+    list-style-type: none;
+    list-style-image: none;
+    list-style-position: outside;
+    float: left;
+    padding: 0 15px 0 0;
+    margin: 0px;
+}
+
+#nav li a:link, #nav li a:visited {
+	text-decoration: none;
+	color: white;
+
+}
+
+p {
+	color: white;
+}
+
+.about-page {
+	color: white;
+	text-align: center;
+}
+
+
+
+
+
+
+.clearfix:after {
+	content: ".";
+	display: block;
+	height: 0;
+	clear: both;
+	visibility: hidden;
+}
+
+.clearfix {display: inline-block;}
+	/* Hides from IE-mac \*/
+	* html .clearfix {height: 1%;}
+	.clearfix {display: block;}
+	/* End hide from IE-mac */
+
+
+
