@@ -1,13 +1,15 @@
-function Head(x, y) {
+function Head(x, y, num) {
   this.x = x;
   this.y = y;
-  this.r = 30;
-      
+  this.r = 0;
+  this.xdir = 2;
+  this.n = num;
 
-  this.xdir = 1;
 
-  this.grow = function() {
-    this.r = this.r - 5;
+
+  this.change = function() {
+    //this.r = this.r - 5;
+    //this.r = image(trump[5]);
   }
 
   this.shiftDown = function() {
@@ -20,10 +22,9 @@ function Head(x, y) {
   }
 
   this.show = function() {
-    // noStroke();
-    // fill(255, 0, 200, 150);
-    //image(img, this.x, this.y);
-   ellipse(this.x, this.y, this.r*2, this.r*2);
+    image(trump[this.n], this.x, this.y, this.r*2, this.r*2);
+    //image(trump[floor(random(trump.length))], this.x, this.y, this.r*2, this.r*2);
+  
   }
 
 }
